@@ -1,0 +1,12 @@
+<input type="file" (change)="onFileSelected($event)" hidden [accept]="requiredFileType" #fileUpload>
+<div style="display:flex">
+    <div><button (click)="fileUpload.click()" class="icon-button"></button>
+    </div><div><button (click)="uploadFile()" class="icon-button-upload"></button></div>
+</div>
+
+<div *ngIf="uploadProgress > 0">Progress: {{ uploadProgress }}%</div>
+<div *ngIf="uploadError">{{ uploadError }}</div>
+
+<div class="doc-preview">
+    <embed id="preview" src="" width="0" height="0"/>
+</div>

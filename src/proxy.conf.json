@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+      "target": "back_end_server_address", // Replace with your backend server address
+      "secure": true,
+      "changeOrigin": true
+    }
+  }
