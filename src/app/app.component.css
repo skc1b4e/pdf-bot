@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-pane, .right-pane {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.divider {
+    width: 5px;
+    background-color: #ccc;
+    cursor: col-resize;
+}

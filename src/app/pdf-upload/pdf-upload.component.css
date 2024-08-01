@@ -1,0 +1,32 @@
+.icon-button {
+    background-image: url('/assets/pdficon.png');
+    background-repeat: no-repeat;
+    background-position: center; /* Adjust as needed */
+    background-size: contain; /* Adjust as needed */
+    border: none; /* Remove default button border */
+    padding: 0; /* Remove default button padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    width: 40px; /* Adjust button width */
+    height: 40px; /* Adjust button height */
+    margin-left: 5px;
+  }
+
+  .icon-button-upload {
+    background-image: url('/assets/uploadicon.png');
+    background-repeat: no-repeat;
+    background-position: center; /* Adjust as needed */
+    background-size: contain; /* Adjust as needed */
+    border: none; /* Remove default button border */
+    padding: 0; /* Remove default button padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    width: 40px; /* Adjust button width */
+    height: 40px; /* Adjust button height */
+    margin-left: 5px;
+  }
+
+  .doc-preview {
+    height: fit-content;
+    width: fit-content;
+    background-color: azure;
+    border: 2px slateblue dotted;
+  }

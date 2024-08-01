@@ -1,0 +1,104 @@
+.chat-panel {
+    height: 600px;
+    width: 600px;
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+  }
+  
+  .chat-messages {
+    padding: 10px;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .message-sender {
+    font-weight: bold;
+  }
+  
+  .chat-input {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .btn-send {
+    background-image: url('/assets/askicon.png');
+    background-repeat: no-repeat;
+    background-position: center; /* Adjust as needed */
+    background-size: contain; /* Adjust as needed */
+    border: none; /* Remove default button border */
+    padding: 0; /* Remove default button padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    width: 25px; /* Adjust button width */
+    height: 25px; /* Adjust button height */
+    margin-left: 5px;
+  }
+
+  .btn-trash {
+    background-image: url('/assets/trashicon.png');
+    background-repeat: no-repeat;
+    background-position: center; /* Adjust as needed */
+    background-size: contain; /* Adjust as needed */
+    border: none; /* Remove default button border */
+    padding: 0; /* Remove default button padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    width: 20px; /* Adjust button width */
+    height: 20px; /* Adjust button height */
+    margin-left: 5px;
+  }
+
+  .img-bot {
+    background-image: url('/assets/boticon.png');
+    background-repeat: no-repeat;
+    background-position: left; /* Adjust as needed */
+    background-size: contain; /* Adjust as needed */
+    border: none; /* Remove default button border */
+    padding: 0; /* Remove default button padding */
+    cursor: none; /* Change cursor to pointer on hover */
+    width: 30px; /* Adjust button width */
+    height: 30px; /* Adjust button height */
+    margin-left: 5px;
+  }
+
+  .img-user {
+    background-image: url('/assets/usericon.png');
+    background-repeat: no-repeat;
+    background-position: left; /* Adjust as needed */
+    background-size: contain; /* Adjust as needed */
+    border: none; /* Remove default button border */
+    padding: 0; /* Remove default button padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    width: 30px; /* Adjust button width */
+    height: 30px; /* Adjust button height */
+    margin-left: 5px;
+  }
+
+  .msg-content {
+    background-color: gainsboro;
+    width: 100%;
+    font-size: small;
+    font-weight: normal;
+  }
+
+  .usr-prompt {
+    width: 80%;
+    min-width: 80%;
+    max-width: 95%;
+  }
+
+  .btn-send-2 {
+    background-image: url('/assets/askicon-2.png');
+    background-repeat: no-repeat;
+    background-position: center; /* Adjust as needed */
+    background-size: contain; /* Adjust as needed */
+    border: none; /* Remove default button border */
+    padding: 0; /* Remove default button padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    width: 25px; /* Adjust button width */
+    height: 25px; /* Adjust button height */
+    margin-left: 5px;
+  }
+  
