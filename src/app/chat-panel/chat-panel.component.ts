@@ -6,6 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { environment } from '../../environments/environment';
 
 interface Message {
   sender: string;
@@ -43,9 +44,9 @@ export class ChatPanelComponent {
 
     var url:string='';
     if(type == 1){
-      url = '/api/ask';
+      url = `${environment.backendUrl}/api/ask`;
     } else if (type == 2) {
-      url = '/api/ask-pdf';
+      url = `${environment.backendUrl}/api/ask`;
     }
     const params = new HttpParams().set('question', question);
     this.http.get(url, {
