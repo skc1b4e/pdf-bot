@@ -1,15 +1,23 @@
-FROM node:latest as build
+# Use a lean Node.js base image
+FROM node:18-alpine
 
-WORKDIR /usr/local/app
+# Set the working directory
+WORKDIR /usr/src/app
 
-COPY ./ /usr/local/app
+# Copy package.json and package-lock.json
+COPY package*.json ./
 
+# Install dependencies
 RUN npm install
 
+# Copy the rest of the application code
+COPY . .
+
+# Build the Angular application for SSR production
 RUN npm run build
 
-FROM nginx:latest
+# Expose the port
+EXPOSE 4000
 
-COPY --from=build /usr/local/app/dist/pdf-bot /usr/share/nginx/html
-
-EXPOSE 80
+# Start the application
+CMD [ "node", "dist/pdf-bot/server/server.mjs" ]
