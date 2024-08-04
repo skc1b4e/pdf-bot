@@ -10,4 +10,4 @@ Features built in this application as follows
 
 # pdf-chat
 
-Front end implementation available @ https://github.com/skc1b4e/pdf-chat
+Backend implementation available @ https://github.com/skc1b4e/pdf-chat
